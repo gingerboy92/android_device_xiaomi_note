@@ -3,6 +3,8 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/xiaomi/note/BoardConfigVendor.mk
 
+DEVICE_FOLDER := device/xiaomi/note
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6592
 TARGET_BOARD_PLATFORM_GPU := mali-450

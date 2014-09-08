@@ -19,13 +19,13 @@ PRODUCT_COPY_FILES += \
 
 # recovery
 PRODUCT_COPY_FILES += \
-device/xiaomi/note/recovery/factory_init.project.rc:recovery/root/factory_init.project.rc \
-device/xiaomi/note/recovery/factory_init.rc:recovery/root/factory_init.rc \
-device/xiaomi/note/recovery/fstab:recovery/root/fstab \
-device/xiaomi/note/recovery/meta_init.modem.rc:recovery/root/meta_init.modem.rc \
-device/xiaomi/note/recovery/meta_init.project.rc:recovery/root/meta_init.project.rc \
-device/xiaomi/note/recovery/meta_init.rc:recovery/root/meta_init.rc \
-device/xiaomi/note/recovery/ueventd.rc:recovery/root/ueventd.rc
+$(LOCAL_PATH)/recovery/factory_init.project.rc:recovery/root/factory_init.project.rc \
+$(LOCAL_PATH)/recovery/factory_init.rc:recovery/root/factory_init.rc \
+$(LOCAL_PATH)/recovery/fstab:recovery/root/fstab \
+$(LOCAL_PATH)/recovery/meta_init.modem.rc:recovery/root/meta_init.modem.rc \
+$(LOCAL_PATH)/recovery/meta_init.project.rc:recovery/root/meta_init.project.rc \
+$(LOCAL_PATH)/recovery/meta_init.rc:recovery/root/meta_init.rc \
+$(LOCAL_PATH)/recovery/ueventd.rc:recovery/root/ueventd.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
